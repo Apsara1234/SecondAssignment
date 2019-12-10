@@ -45,15 +45,16 @@ public class GalleryFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
        int pal=Integer.parseInt(etPal.getText().toString());
+
        Palindrome palindrome=new Palindrome();
        int result=palindrome.reverse(pal);
 
        if (result==pal)
        {
-           Toast.makeText(getActivity(),result+"is palindrome",Toast.LENGTH_SHORT).show();
+           Toast.makeText(getActivity(),pal + " is palindrome",Toast.LENGTH_SHORT).show();
        }
        else{
-           Toast.makeText(getActivity(),result+"palindrome",Toast.LENGTH_SHORT).show();
+           Toast.makeText(getActivity(),pal + " is not palindrome",Toast.LENGTH_SHORT).show();
        }
 
     }
