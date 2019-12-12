@@ -59,7 +59,7 @@ private EditText etAuto;
                 Toast.makeText(getActivity(),a+"is automorphic",Toast.LENGTH_SHORT).show();
             }
        else{
-                Toast.makeText(getActivity(),a+"automorphic",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),a+" is not automorphic",Toast.LENGTH_SHORT).show();
             }
         }
 
